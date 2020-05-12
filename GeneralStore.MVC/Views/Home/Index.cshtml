@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Our General Store</h1>
+    <p class="lead">Welcome! Do come in! Have a look around, hm? Feel free to browse, but try not to carouse! Ho ho!</p>
+    @Html.ActionLink("Learn More About Us", "About", null, new { @class = "btn btn-primary btn-large" })
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction. <br />
+            Come browse our products and see what we have for you.
+        </p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div class="col-md-4">
+        <h2>Mission Statement</h2>
+        <p>
+            [But] we don't do things because they are easy, hm? We do them because they are profitable.
+        </p>
+        @Html.ActionLink("About Us", "About", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div class="col-md-4">
+        <h2>Give Back</h2>
+        <p>
+            It makes me so proud when my friends get out there and try new things.
+
+            Let us know how you're making a difference.
+        </p>
+        @Html.ActionLink("Contact Us", "Contact", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+</div>
